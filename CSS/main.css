@@ -8,7 +8,7 @@ body {
     background-color: #F4F4F4;
 }
 @import url("https://fonts.googleapis.com/css?family=Montserrat:700");
-@media screen and (min-width:350px) {
+@media screen and (min-width:320px) {
     /*header*/
     .hero {
         background-color: #F4F4F4;
@@ -35,14 +35,15 @@ body {
         left: 45vw;
         width: 10px;
         height: 10px;
-        border: solid 1px #ffe602;
+
+        border: solid 1px rgb(13, 18, 95);
         transform-origin: top left;
         transform: scale(0) rotate(0deg) translate(-50%, -50%);
         -webkit-animation: cube 12s ease-in forwards infinite;
                 animation: cube 12s ease-in forwards infinite;
       }
       .cube:nth-child(2n) {
-        border-color: #ffe602;
+        border-color: rgb(15, 28, 206);
       }
       .cube:nth-child(2) {
         -webkit-animation-delay: 2s;
@@ -122,13 +123,15 @@ body {
       }
       .p-animation {
           font-family: "Courier";
-          font-size: 2rem;
+          font-size: 1.4rem;
           white-space: nowrap;
           overflow: hidden;
           width: 100%;
           animation: type 4s steps(60, end);
           position: absolute; 
           left: 0;
+          color: rgb(24, 28, 87);
+          font-weight: bold;
       }
         
       .p-animation:nth-child(2){
@@ -173,11 +176,11 @@ body {
       
       .navigation a {
           text-decoration: none;
-          color: #ffe602;
           margin-right: 12%;
           position: relative;
           font-size: 1.2rem;
           transition: all 0.8s ease;
+          color: rgb(13, 18, 95);
       }
       .navigation a:last-child {
           margin-right: 0px;
@@ -208,6 +211,90 @@ body {
       }
       .content .line {
           margin-bottom: 30px;
+      }
+      .container-skills {
+        margin-top: 5%;
+        width: 100%;
+        height: 300px;
+        display: flex;
+      }
+      .box-info-skill {
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .box-info-skill h1 {
+        font-size: 1.2rem;
+        color: rgb(13, 18, 95);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container-list-skills {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+      }
+      .list-skill {
+        display: flex;
+        width: 300%;
+        height: 100%;
+      }
+      .item-skill {
+        width: 33.333%;
+        padding-top: 28px;
+      }
+      .item-skill img {
+        width: 102px;
+        height: 102px;
+      }
+      .list-skill input {
+        display: none;
+      }
+      .container-btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        bottom: 0px;
+      }
+      .btn {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 2px solid rgb(13, 18, 95);
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background-color: rgb(13, 18, 95);
+      }
+      #slide1:checked ~ .s1 {
+        margin-left: 0;
+      }
+      #slide2:checked ~ .s1 {
+        margin-left: -33.333%;
+      }
+      #slide3:checked ~ .s1 {
+        margin-left: -66.666%;
+      }
+
+
+      .box-info-skill ul {
+        list-style-type: none;
+        columns: 2;
+        margin-top: 10px;
+        width: 80%;
+        margin: 0 auto;
+      }
+      .box-info-skill ul li {
+        font-size: 1.3rem;
+        margin-top: 14px;
+      }
+      .box-info-skill ul li:first-child {
+        margin-top: 0px;
       }
       .list-view-project {
           list-style-type: none;
@@ -243,7 +330,7 @@ body {
       }
       .show-title {
           font-size: 2rem;
-          margin: 9% 0px 0px 20px;
+          margin:70% 0px 0px 20px;
       }
       .show-title .line {
           width: 95%;
@@ -277,7 +364,7 @@ body {
           align-items: center;
           color: #fff;
           position: relative;
-          border: 1px solid #ffe602;
+          border: 1px solid rgb(15, 28, 206);
           box-shadow: 1px 1px 4px #000;
           font-size: 1.3rem;
       }
@@ -288,7 +375,7 @@ body {
           content: 'Vazio';
           width: 100%;
           height: 30px;
-          background-color: #ffe602;
+          background-color: rgb(15, 28, 206);
           position: absolute;
           bottom: 26px;
           display: flex;
@@ -341,53 +428,28 @@ body {
           color: #000;
           font-size: 1rem;
       }
-      .container-cont {
-          font-size: 1rem;
-          margin: 40px 0px 0px 0px;
+      .redes {
+        text-align: center;
+        width: 100%;
+        margin-top: 20px; 
       }
-      .container-cont ul{
-          list-style-type: none;
+      .redes h3 {
+        font-size: 2.4rem;
+        margin-bottom: 30px;
       }
-      .container-cont h3{
-          margin-bottom: 40px;
+      .contact-list {
+        list-style-type: none;
+        display: flex;
+        width: 100%;
+        justify-content: center;
       }
       .contact-list li {
-          margin-bottom: 10px;
+        margin-right: 15px;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        border: 2px solid black;
       }
-      .contact-list li:hover {
-          font-size: 1.4rem;
-      }
-      .contact-list li a, .redes li a{
-          text-decoration: none;
-          color: #000;
-      }
-      .contact-list li:first-child, .redes li:first-child{
-        margin-top: 14px;
-      }
-
-      .redes {
-        margin-left: 20px;
-        float: left;
-      }
-      .redes ul, .contatos ul {
-        list-style-type: none;
-        
-      }
-      .contatos {
-        float: left;
-        margin-left: 20px;
-      }
-      .redes li {
-          margin-bottom: 10px;
-          box-sizing: border-box;
-      }
-      .redes li:hover {
-          margin-bottom: 8px;
-          font-size: 1rem;
-      }
-
-
-
 }
 
 
@@ -395,20 +457,64 @@ body {
 
 
 @media screen and (min-width:992px) {
+    .navigation {
+        width: 50%;
+        background-color:rgb(13, 18, 95);
+    }
+
     .navigation a {
         text-decoration: none;
-        color: #ffe602;
+        color: #F4F4F4;
         margin-right: 20%;
         position: relative;
         font-size: 1.2rem;
         transition: all 0.8s ease;
     }
+    /*footer*/
+    .trabalho-item {
+        width: 20%;
+    }
+    .small-text {
+        position: absolute;
+        top: 26px;
+        left: 23px;
+        font-size: 16px;
+    }
+    
+    .about {
+        margin: 40px 0px -5% 10px;
+        display: table;
+        transform-origin: 0% 0%;
+        transition: all 0.5s ease;
+    }
+    .about a {
+        text-decoration: none;
+        color: #000;
+        
+    }
 
+    .about h1 {
+        font-size: 3.3rem;
+    }
+    .email {
+        margin-left: 10px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .email a {
+        text-decoration: none;
+        color: #000;
+        font-size: 2rem;
+    }
 }
 
 
 
 
+
+.color-blue {
+    color: rgb(29, 36, 143);
+}
 .display-flex {
     opacity: 1;
     display: flex;
