@@ -454,9 +454,14 @@ body {
 
 
 
-
+@media screen and (min-width:500px) { 
+.show-title {
+    margin-top: 40%;
+}
+}
 
 @media screen and (min-width:992px) {
+    
     .navigation {
         width: 50%;
         background-color:rgb(13, 18, 95);
@@ -469,6 +474,9 @@ body {
         position: relative;
         font-size: 1.2rem;
         transition: all 0.8s ease;
+    }
+    .show-title {
+        margin-top: 0%;
     }
     /*footer*/
     .trabalho-item {
