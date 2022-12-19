@@ -162,7 +162,7 @@ body {
           height: 50px;
           width: 80%;
           position: fixed;
-          top: 3%;
+          top: 1%;
           left: 0;
           right: 0;
           margin: 0px auto;
@@ -180,7 +180,7 @@ body {
           position: relative;
           font-size: 1.2rem;
           transition: all 0.8s ease;
-          color: rgb(13, 18, 95);
+          color: #F4F4F4;
       }
       .navigation a:last-child {
           margin-right: 0px;
@@ -287,7 +287,7 @@ body {
         columns: 2;
         margin-top: 10px;
         width: 80%;
-        margin: 0 auto;
+        margin: 20px auto 0px auto;
       }
       .box-info-skill ul li {
         font-size: 1.3rem;
@@ -296,37 +296,68 @@ body {
       .box-info-skill ul li:first-child {
         margin-top: 0px;
       }
-      .list-view-project {
-          list-style-type: none;
-      }
       .project {  
-          width: 90%;
-          height: 400px;
-          background-color: #000;
-          margin:0px 0px 20px 20px;
+          width: 100%;
+          height: auto;
+          background-color: #c2bfbf;
+          margin:2% 0px 20px 10%;
           display: block;
+          border-radius: 20px;
+          border: 1px solid black;
+          opacity: 0;
+          transition: all 0.5s ease;
+          transform-origin:bottom;
+          z-index: 10;
+      }
+      .project .line {
+        width: 90%;
+        margin: 0 auto;
+      }
+      .photo-project {
+        width: 90%;
+        height: 300px;
+        margin: 0 auto;
+        background-color: rgb(253, 253, 255);
+      }
+      .project h1 {
+        text-align: center;
+        padding-top: 20px;
+        font-size: 2.5rem;
+
       }
       .descrition {
           width: 90%;
-          height: 400px;
-          margin: 25px 0px 0px 0px;
+          margin: 10px auto 0px auto;
+          padding-bottom: 20px;
           font-size: 2rem;
       }
       .descrition p {
         font-size: 1.5rem;
       }
-      .descrition .line {
-          margin-bottom: 30px;
+      .btn-view-project {
+        margin: 0px 0px 20px 30px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 40px;
+        background-color: #F4F4F4;
+        color: rgb(13, 18, 95);
+        cursor: pointer;
+        font-size: 1rem;
+        box-shadow: 1px 1px 1px black;
+        font-weight: bolder;
       }
-      .list-view-project .item:nth-child(even) .row {
-          flex-direction: row-reverse;
+      .btn-view-project:hover {
+        transform: translate(-3px, -5px);
+        box-shadow: 4px 6px 1px black;
       }
-      .list-view-project .item:nth-child(even) .descrition {
-          float: right;
-          text-align: right;
+      .list-view-project {
+        list-style-type: none;
       }
-      .p-animationroject:first-child {
-          margin-top: 40px;
+      .list-view-project .item:nth-child(even) .row .project{
+        float: right;
+        flex-direction: row-reverse;
+        margin-right: 10%;
+        transform-origin: bottom right;
       }
       .show-title {
           font-size: 2rem;
@@ -337,14 +368,12 @@ body {
       }
       .container-list-comercial {
           width: 100%;
-          margin: 40px 0px 8% 0px;
+          margin: 40px 0px 4% 0px;
           text-align: center;
           font-size: 2rem;
-          
       }
       .container-list-comercial .line {
-          margin: 0px 20px 40px 0px;
-          
+          margin: 0px 20px 40px 0px; 
       }
       .list-comercial {
           display: flex;
@@ -381,9 +410,30 @@ body {
           display: flex;
           justify-content: center;
           align-items: center;
-          color: #000;
+          color: #F4F4F4;
       }
-      
+      .orc {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+      }
+      .btn-orc {
+        height: 30px;
+        width: auto;
+        margin: 0px auto;
+        padding: 20px;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        background-color: #F4F4F4;
+        color: rgb(13, 18, 95);
+        font-weight: bolder;
+        cursor: pointer;
+        font-size: 1rem;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.63);
+      }
       footer { 
           height: auto;
           width: 100%;
@@ -409,11 +459,10 @@ body {
       .about a {
           text-decoration: none;
           color: #000;
-          
       }
-
       .about h1 {
           font-size: 1.7rem;
+          margin-bottom: 20px;
       }
       .about:hover {
           transform: rotate(-3deg);
@@ -427,28 +476,50 @@ body {
           text-decoration: none;
           color: #000;
           font-size: 1rem;
+          display: table;
       }
       .redes {
         text-align: center;
         width: 100%;
         margin-top: 20px; 
-      }
-      .redes h3 {
-        font-size: 2.4rem;
-        margin-bottom: 30px;
+        height: 100px;
       }
       .contact-list {
         list-style-type: none;
-        display: flex;
-        width: 100%;
-        justify-content: center;
+        display: table;
+        width: auto;
+        height: 100%;
+        text-align: center;
+        font-size: 1.6rem;
+        margin: 0 auto;
       }
       .contact-list li {
         margin-right: 15px;
-        width: 45px;
-        height: 45px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         border: 2px solid black;
+        display: inline-block;
+        transform-origin: bottom;
+        transition: 0.2s ease;
+        background-color: #F4F4F4;
+        z-index: 2;
+      }
+      .contact-list li:hover {
+        transform: translate(0px, -10px);
+        box-shadow: 1px 1px 10px black;
+      }
+      .cont-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+      }
+      .img-contact {
+        width: 30px;
+        height: 30px;
       }
 }
 
@@ -464,7 +535,7 @@ body {
     
     .navigation {
         width: 50%;
-        background-color:rgb(13, 18, 95);
+        background-color: rgb(134, 109, 109);
     }
 
     .navigation a {
@@ -474,6 +545,15 @@ body {
         position: relative;
         font-size: 1.2rem;
         transition: all 0.8s ease;
+    }
+    .box-info-skill h1{
+      font-size: 2rem;
+    }
+    .container-btns {
+      bottom: -8px;
+    }
+    .project {
+      width: 50%;
     }
     .show-title {
         margin-top: 0%;
@@ -514,12 +594,25 @@ body {
         color: #000;
         font-size: 2rem;
     }
+    .contact-list {
+      margin-right: 20%;
+    }
 }
 
 
 
 
 
+.opacity-right {
+  opacity: 1;
+  display: block;
+  transform: translate(14px, -30px);
+}
+.opacity-left {
+  opacity: 1;
+  display: block;
+  transform: translate(7px, -30px);
+}
 .color-blue {
     color: rgb(29, 36, 143);
 }
