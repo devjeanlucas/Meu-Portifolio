@@ -533,10 +533,11 @@ body {
       }
       
       .about {
-          margin: 40px 0px -5% 10px;
+          margin: 40px 0px 0px 10px;
           display: table;
           transform-origin: 0% 0%;
           transition: all 0.5s ease;
+          display: table;
       }
       .about a {
           text-decoration: none;
@@ -553,6 +554,7 @@ body {
           margin-left: 10px;
           width: 100%;
           margin-bottom: 30px;
+          margin-top: -10%;
       }
       .email a {
           text-decoration: none;
