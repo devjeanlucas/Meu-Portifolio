@@ -6,7 +6,7 @@ var waypoint = new Waypoint({
     handler: function() {
       navigation.classList.toggle('display-flex')
     },
-    offset:'50%'
+    offset:'-5%'
   })
  
 //lista automatica das skills
