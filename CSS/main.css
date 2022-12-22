@@ -39,14 +39,14 @@ body {
       border-radius: 40px;
       font-family: Arial, Helvetica, sans-serif;
     }
-    .formulario .line, h1 {
+    .formulario .line {
       font-family: Arial, Helvetica, sans-serif;
       font-size: 1.2rem;
       width: 96.6%;
       margin-left: 10px;
     }
     .formulario h1 {
-      margin-top: 40px;
+      margin-top: 30px;
       margin-bottom: 10px;
     }
     fieldset {
@@ -294,7 +294,7 @@ body {
         margin-bottom: 20px;
       }
       .box-info-skill h1 {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         color: rgb(13, 18, 95);
         font-family: Arial, Helvetica, sans-serif;
       }
@@ -369,7 +369,7 @@ body {
       .project {  
           width: 100%;
           height: auto;
-          background-color: #c2bfbf;
+          background-color: #d8d8d8;
           margin:2% 0px 20px 10%;
           display: block;
           border-radius: 20px;
@@ -385,15 +385,17 @@ body {
         margin: 0 auto;
       }
       .photo-project {
-        width: 90%;
+        width: 80%;
         height: 250px;
         margin: 0 auto;
         background-color: rgb(253, 253, 255);
       }
       .project h1 {
-        text-align: center;
+        text-align: right;
         padding-top: 20px;
         font-size: 2.5rem;
+        margin-right: 20px;
+        font-family: Arial, Helvetica, sans-serif;
 
       }
       .descrition {
@@ -404,9 +406,13 @@ body {
       }
       .descrition p {
         font-size: 1.5rem;
+        color: rgb(13, 18, 95);
+        text-align: left;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
       }
       .btn-view-project {
-        margin: 0px 0px 20px 30px;
+        margin: 0px 10px 20px 0px;
         padding: 10px;
         border: 1px solid black;
         border-radius: 40px;
@@ -416,6 +422,7 @@ body {
         font-size: 1rem;
         box-shadow: 1px 1px 1px black;
         font-weight: bolder;
+        float: right;
       }
       .btn-view-project:hover {
         transform: translate(-3px, -5px);
@@ -430,6 +437,10 @@ body {
         margin-right: 10%;
         transform-origin: left;
       }
+      .list-view-project .item:nth-child(even) .row .project .descrition p {
+        text-align: left;
+      }
+      
       .show-title {
           font-size: 2rem;
           margin:20% 0px 0px 20px;
@@ -597,14 +608,15 @@ body {
 
 
 @media screen and (min-width:500px) { 
+.formulario h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .show-title {
     margin-top: 40%;
 }
 .title {
   margin: 12% 0px 12% 0px;
-}
-.redes {
-  margin: 0px 0px 0px 18%;
 }
 .about a h1 {
   font-size: 2.2rem;
@@ -696,12 +708,12 @@ body {
 .opacity-right {
   opacity: 1;
   display: block;
-  transform: translate(1px, -30px);
+  transform: translate(-14px, -30px);
 }
 .opacity-left {
   opacity: 1;
   display: block;
-  transform: translate(1px, -30px);
+  transform: translate(17px, -30px);
   float: left;
 }
 .color-blue {
