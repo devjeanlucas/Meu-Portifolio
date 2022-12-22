@@ -11,7 +11,7 @@ var waypoint = new Waypoint({
  
 //lista automatica das skills
 let count = 1;
-document.getElementById("slide1").checked = true;
+//document.getElementById("slide1").checked = false;
 
 setInterval( function () { 
   nextImage()
@@ -24,7 +24,6 @@ setInterval( function () {
   }
   document.getElementById("slide"+count).checked = true;
  }
-
 
  //waypoint da lista de projetos
 
@@ -59,4 +58,20 @@ var waypoint = new Waypoint({
       p4.classList.toggle('opacity-left')
     },
     offset:'50%'
+})
+
+//Overlay
+var btn_to_overlays = document.querySelectorAll('.tog')
+for (var c =0; c < btn_to_overlays.length; c++){
+    btn_to_overlays[c].addEventListener('click', function() {
+      var over = document.querySelector('.overlay')
+      var form = document.querySelector('.formulario')
+
+      over.classList.toggle('display-block')
+      form.classList.toggle('display-block')
+    })
+}
+let form = document.querySelector('.formulario')
+form.addEventListener('submit', e => {
+  e.preventDefault()
 })
