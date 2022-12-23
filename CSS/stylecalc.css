@@ -8,31 +8,17 @@ body {
 }
 
 
-@media screen and (min-width:350px) {
-    .btn-return-home {
-        width: 40%;
-        height: 30px;
-        margin: 0 auto;
-        padding: 16px;
-        background-color: #fff;
-        color: #000;
-        text-decoration: none;
-        border-radius:40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 700;
-    }
+@media screen and (min-width:320px) {
     .col-sm-3 {
         margin: 6px 0px 3px 0px;
         padding: 0px;
     }
     .container {
-        width: 50%;
+        width: 95%;
         height: 100%;
         padding: 20px;
         box-sizing: border-box;
-        margin: 30px auto;
+        margin: 15% auto 0px auto;
         background-color: #fff;
         border-radius: 20px;
 
@@ -48,21 +34,43 @@ body {
         text-align: right;
     }
     .btn-container {
-        margin-left: 20px;
-        
+        display: flex;
+        margin-top: 10px;
     }
     .btn {
         border: none;
-        padding: 20px;
+        padding: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         box-sizing: border-box;
         background-color: rgb(65, 60, 60);
         color: rgb(251, 255, 0);
         cursor: pointer;
         border-radius: 20px;
         font-size: 1.2rem;
-        width: 90%;
+        width: 45px;
+        margin-left: 20px;
     }
     .btn:hover {
         background-color: rgb(138, 121, 121);
+    }
+    .navigation {
+        opacity: 1;
+    }
+} 
+
+@media screen and (min-width:576px) {
+    .btn {
+        padding: 20px;
+        width: 90%;
+        margin-left: 10px;
+    }
+    .btn-container {
+        display: block;
+    }
+    .container {
+        width: 50%;
+        margin-top: 9%;
     }
 }
