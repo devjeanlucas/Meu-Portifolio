@@ -184,6 +184,7 @@ body {
           font-size: 4rem;
           font-family: Arial, Helvetica, sans-serif;
           margin-bottom: 2%;
+          margin-top: 33%;
       }
       
       .text-top p {
@@ -308,12 +309,12 @@ body {
       }
       .list-skill {
         display: flex;
-        width: 300%;
+        width: 400%;
         height: 100%;
         overflow: hidden;
       }
       .item-skill {
-        width: 33.333%;
+        width: 25%;
         padding-top: 28px;
       }
       .item-skill img {
@@ -348,10 +349,13 @@ body {
         margin-left: 0;
       }
       #slide2:checked ~ .s1 {
-        margin-left: -33.333%;
+        margin-left: -25%;
       }
       #slide3:checked ~ .s1 {
-        margin-left: -66.666%;
+        margin-left: -50%;
+      }
+      #slide4:checked ~ .s1 {
+        margin-left: -75%;
       }
 
 
@@ -383,12 +387,16 @@ body {
           z-index: 10;
           float: left;
       }
+      .project a {
+        text-decoration: none;
+        color: #000;
+      }
       .project .line {
         width: 90%;
         margin: 0 auto;
       }
       .photo-project {
-        width: 80%;
+        width: 90%;
         height: 250px;
         margin: 0 auto;
         background-color: rgb(253, 253, 255);
@@ -626,6 +634,9 @@ body {
 .title {
   margin: 12% 0px 12% 0px;
 }
+.title h1 {
+  margin-top: 12%;
+}
 .about a h1 {
   font-size: 2.2rem;
   margin-bottom: 0px;
@@ -666,7 +677,7 @@ body {
       bottom: -8px;
     }
     .project {
-      width: 50%;
+      width: 40%;
     }
     .show-title {
         margin-top: 0%;
