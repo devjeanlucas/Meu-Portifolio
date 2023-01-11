@@ -1,0 +1,151 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: #000;
+}
+
+
+@media screen and (min-width:350px) {
+    .container {
+        width: 90%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        margin: 40px auto;
+        background-color: #fff;
+        border-radius: 20px;
+    }
+    .container h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    .display {
+        width: 100%;
+        height: 50px;
+        font-size: 2rem;
+        text-align: right;
+    }
+    .btn-container {
+        margin-top: 20px;
+        text-align: center;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn {
+        border: none;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: rgb(65, 60, 60);
+        color: rgb(251, 255, 0);
+        cursor: pointer;
+        width: 80px;
+        border-radius: 20px;
+        font-size: 18px;
+    }
+    .btn:hover {
+        background-color: rgb(138, 121, 121);
+    }
+}
+@media screen and (min-width:607px) {
+    .container {
+        width: 90%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        margin: 40px auto;
+        background-color: #fff;
+        border-radius: 20px;
+    }
+    .container h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .display {
+        width: 100%;
+        height: 50px;
+        font-size: 2rem;
+        text-align: right;
+
+    }
+    .btn-container {
+        margin-top: 20px;
+        text-align: center;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn {
+        border: none;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: rgb(65, 60, 60);
+        color: rgb(251, 255, 0);
+        cursor: pointer;
+        width: 120px;
+        border-radius: 20px;
+        font-size: 18px;
+    }
+    .btn:hover {
+        background-color: rgb(138, 121, 121);
+    }
+}
+
+
+@media screen and (min-width:950px) {
+    .container {
+        width: auto;
+        display: table;
+        padding: 20px;
+        box-sizing: border-box;
+        margin: 40px auto;
+        background-color: #fff;
+        border-radius: 20px;
+    }
+    .container h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    .display {
+        width: 100%;
+        height: 50px;
+        font-size: 2rem;
+        text-align: right;
+        margin-left: 0px;
+    }
+    button {
+        border: none;
+        background-color: #000;
+        font-size: 20px;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        cursor: pointer;
+    }
+    .btn-container {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .btn {
+        box-sizing: border-box;
+        background-color: rgb(65, 60, 60);
+        width: 136px;
+        color: rgb(251, 255, 0);
+        cursor: pointer;
+        height: 100%;
+        border-radius: 20px;
+    }
+    .btn:hover {
+        background-color: rgb(138, 121, 121);
+    }
+    .container img {
+        width: 18px;
+        height: 18px;
+    }
+}

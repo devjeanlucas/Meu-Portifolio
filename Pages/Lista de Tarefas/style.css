@@ -1,0 +1,163 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: #d9dcfa !important;
+}
+@media screen and (min-width:320px) {
+    .row {
+        justify-content: space-between;
+    }
+    .container-geral {
+        width: 100%;
+        overflow-x: hidden;
+        height: 100vh;
+    }
+    .btn_new_tarefa_mob {
+        background-color: #125dff;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.2rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+        box-shadow: 1px 1px 4px #000;
+        font-weight: lighter;
+        
+    }
+    .container-tarefas {
+        width: 90%;
+        height: 90%;
+        background-color: rgba(243, 243, 243, 0.966);
+        margin: 10px auto;
+    }
+    .tarefas {
+        list-style-type: none;
+        padding: 0px;
+    }
+    .title-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+    .title-list h2 {
+        margin-right: 10%;
+    }
+    .tarf p:first-child {
+        text-indent: 10px;
+    } 
+    .tarf p {
+        text-indent: 2px;
+    }
+    .container-tarf {
+        width: 100%;
+    }
+    .tarf {
+        border-bottom: 1px solid #000;  
+        margin:0px 0px 10px 0px !important;
+    }
+
+    .btn-new {
+        border: none;
+        padding: 8px;
+        border-radius: 6px;
+    }
+    .container-new-tarefa {
+        display: none;
+        width: 100%;
+        background: linear-gradient(#125dff, #d9dcfa);
+        margin-top: 20px;
+        border-radius: 6px;
+    }
+    .container-form {
+        padding: 20px;
+        color: #fff;
+    }
+    .container-form h4 {
+        color: rgb(251, 255, 0);
+    }
+    .container-form input {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+    .container-form select {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .title:not(:first-child) {
+        margin-left: -20px;
+    }
+    .title-tarefas {
+        padding: 5px;
+        border: 1px solid #000;
+        background-color: #dddde4;
+    }
+    .container {
+        background-color: rgb(74, 77, 241);
+        width: 100%;
+        padding: 40px;
+        box-sizing: border-box;
+        margin: 20px auto;
+        height: auto;
+        border-radius: 6px;
+        position: relative;
+        display: block;
+    }
+    .container-titles {
+        display: none;
+    }
+    .delete {
+        border: none;
+        padding: 5px;
+    }
+    .delete i {
+        font-size: 1.8rem;
+    }
+    #delete {
+        width: 22px;
+        height: 22px;
+    }
+}
+@media screen and (min-width:767px) {
+    .container-new-tarefa {
+            width: 100%;
+            background: linear-gradient(#125dff, #d9dcfa);
+            margin-top: 20px;
+            border-radius: 6px;
+            display: table;
+    }
+    .container-titles {
+        display: block;
+    }
+    .btn_new_tarefa_mob {
+        display: none;
+    }
+    .tarf p {
+        text-indent: 0px;
+    }
+    .container-form input {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+}
+.is-open {
+    display: block;
+}
+
+.no-margin {
+    margin: 0px;
+}
+.no-padding {
+    padding: 0px;
+}
